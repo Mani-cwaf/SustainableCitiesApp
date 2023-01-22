@@ -1,10 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWkU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FU0U1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FVUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FV0U1.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWkU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FU0U1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FVUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUU1Z4Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0U1.woff2) format('woff2');
+}
 
 :root {
     --header-height: 3rem;
     --font-semi: 600;
-    --first-color: #4070F4;
-    --second-color: #0c283a;
+    --first-color: #40f440;
+    --second-color: #153a0c;
     --box-shadow-color: rgba(0, 0, 0, .2);
     --first-background-color: #fff;
     --second-background-color: rgb(240, 240, 240);
@@ -38,8 +156,8 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
-    margin: var(--header-height) 0 0 0;
+    height: fit-content;
+    margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
@@ -88,11 +206,12 @@ button {
 }
 
 button:hover {
-    background-color: var(--first-background-color);
+    background-color: var(--second-background-color);
+    opacity: 0.85;
     text-decoration: none;
-    transition-duration: 0.1s;
     outline: 1px transparent;
     transform: translateY(-1.25px);
+    transition: all 80ms;
 }
 
 h1,
@@ -127,7 +246,8 @@ br {
     line-height: 7px
 }
 
-.no-select, br {
+.no-select,
+br {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -136,8 +256,21 @@ br {
     user-select: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block
+.home-content {
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+}
+
+.home-title {
+    color: var(--first-color);
+    font-size: 5rem;
+    font-weight: 1200;
+}
+
+.home-img {
+    height: 70vh;
+    width: 100vw;
 }

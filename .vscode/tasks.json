@@ -3,17 +3,21 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "make",
-			"problemMatcher": [],
-			"label": "build",
-			"detail": "electron-forge make"
-		},
-		{
-			"type": "npm",
 			"script": "start",
 			"problemMatcher": [],
 			"label": "start",
 			"detail": "electron-forge start",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "npm",
+			"script": "make",
+			"problemMatcher": [],
+			"label": "build",
+			"detail": "electron-forge make",
 			"group": {
 				"kind": "build",
 				"isDefault": true

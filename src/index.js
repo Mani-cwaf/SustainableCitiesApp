@@ -54,7 +54,7 @@ app.whenReady().then(() => {
 	const contextMenu = Menu.buildFromTemplate([
 		{ label: 'Quit', type: 'normal', click: () => {
 			tray.destroy();
-			app.quit()
+			app.quit();
 		} }
 	])
 	tray.setToolTip('Sustainable Cities.')

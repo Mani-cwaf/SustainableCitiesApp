@@ -1,122 +1,4 @@
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWkU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFU0U1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFVUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFWUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-B4iFV0U1.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWkU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FU0U1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FVUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FWUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-2Y-FV0U1.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWkU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FU0U1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FVUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FWUU1Z4Y.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/rubik/v23/iJWZBXyIfDnIV5PNhY1KTN7Z-Yh-4I-FV0U1.woff2) format('woff2');
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap');
 
 :root {
     --header-height: 15rem;
@@ -131,24 +13,6 @@
     --h2-font-size: 1.25rem;
     --medium-font-size: 1.1rem;
     --normal-font-size: 1rem;
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
-    --z-fixed: 100
-}
-
-@media screen and (min-width: 768px) {
-    :root {
-        --big-font-size: 3rem;
-        --h2-font-size: 1.5rem;
-        --normal-font-size: 0.9rem
-    }
 }
 
 *,
@@ -172,6 +36,7 @@ body {
     font-display: swap;
     font-size: var(--normal-font-size);
     color: var(--second-color);
+    background-color: var(--first-background-color);
 }
 
 .dark-mode-toggle i {
@@ -285,7 +150,8 @@ br {
     line-height: 7px
 }
 
-.no-select, br {
+.no-select,
+br {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -310,8 +176,8 @@ img {
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--first-color);
-    margin-top: var(--mb-2);
-    margin-bottom: var(--mb-4);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     text-align: center
 }
 
@@ -333,8 +199,8 @@ img {
     grid-template-columns: 100%;
     grid-column-gap: 2rem;
     width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2)
+    margin-left: 1rem;
+    margin-right: 1rem
 }
 
 .header {
@@ -342,7 +208,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
+    z-index: 100;
     background-color: #fff;
 }
 
@@ -353,7 +219,7 @@ img {
 .nav-toggle {
     position: absolute;
     color: var(--second-color);
-    padding-right: var(--mb-3);
+    padding-right: 1.5rem;
     cursor: pointer
 }
 
@@ -382,21 +248,16 @@ img {
     rotate: -45deg;
 }
 
-.nav:has(.nav-toggle.active) .nav-menu {
-    right: 0%;
+.nav-toggle.active header nav {
+    display: flex;
 }
 
-.nav {
+nav {
+    position: relative;
+    display: none;
     height: var(--header-height);
     font-weight: var(--font-semi);
     background-color: var(--first-background-color);
-}
-
-.nav-list {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .nav-link {
@@ -404,28 +265,38 @@ img {
     font-size: 2.25rem;
 }
 
-.nav-item {
-    padding: 1.25rem;
-}
-
-.nav-item:hover {
-    opacity: 0.8;
-    transform: translateY(-1.25px);
-}
-
-.nav-item::before {
-    position: relative;
+.nav-link {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
     display: block;
-    content: '';
-    height: 100%;
-    width: 0.4rem;
-    background-color: var(--first-color);
-    transform: scaleY(0);
-    transform-origin: 50% 50%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: clamp(2em, 8vmin, 7em);
+    padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 4vmin, 4em);
+    position: relative;
+    text-decoration: none;
 }
 
-.nav-item:hover::before {
-    animation: NavItemAnimation 500ms ease-in-out 0s 1 normal forwards;
+.nav-link:hover {
+    color: var(--light-blue);
+}
+
+.nav-link:hover:before {
+    transition: width 600ms ease;
+    width: 100%;
+}
+
+.nav-link:before {
+    background: linear-gradient(to right, transparent, var(--blue) var(--light-blue-percent), var(--light-blue));
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+}
+
+.nav-link:nth-child(3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .nav-logo {
@@ -451,18 +322,12 @@ img {
 .home-title {
     padding-top: 10vh;
     font-size: calc(var(--big-font-size) * 1.25);
-    margin-bottom: var(--mb-5);
+    margin-bottom: 2.5rem;
     display: inline-block
 }
 
 .first-color {
     color: var(--first-color)
-}
-
-.home-img {
-    position: relative;
-    height: auto;
-    width: 300px
 }
 
 .button {
@@ -486,82 +351,14 @@ img {
     position: relative;
     font-weight: var(--font-semi);
     padding: .5rem 1rem;
-    margin-bottom: var(--mb-4);
+    margin-bottom: 2rem;
     border-radius: .5rem;
     box-shadow: 0 4px 25px var(--box-shadow-color);
     background: var(--second-background-color);
-
-}
-
-.about-img {
-    justify-self: center
-}
-
-.about-img img {
-    width: 200px;
-    border-radius: .5rem
 }
 
 .subtitle {
-    margin-bottom: var(--mb-2)
-}
-
-.timeline {
-    margin-bottom: 10vh;
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-    color: var(--second-color);
-}
-
-.timeline-component {
-    margin: 0 1rem 1rem 1rem;
-}
-
-.timeline-component--bg {
-    padding: 0.5em;
-    box-shadow: 0 0 10px var(--box-shadow-color);
-    border-radius: 10px;
-    background: var(--second-background-color);
-
-}
-
-.timeline-middle {
-    position: relative;
-    background: var(--second-color);
-}
-
-.timeline-point {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
-    background: var(--second-color);
-    border-radius: 50%;
-}
-
-.timeline-point--bottom {
-    top: initial;
-    bottom: 0;
-}
-
-.timeline-date--right {
-    text-align: right;
-}
-
-.timeline-title {
-    margin: 0;
-    font-size: 1.15em;
-    font-weight: bold;
-}
-
-.home-img {
-    position: relative;
-    height: auto;
-    width: clamp(200px, 300px, 500px);
-    height: fit-content
+    margin-bottom: 1rem
 }
 
 .container {
@@ -573,36 +370,9 @@ img {
     width: 0;
 }
 
-.footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    background: var(--second-background-color);
-    color: var(--first-color);
-    box-shadow: 0 4px 20px var(--box-shadow-color);
-    font-size: 2vh;
-    text-align: center;
-    font-weight: 700;
-    padding: 0.5vh;
-    width: 100%;
-    height: 3.7vh;
-    bottom: 0;
-    transform: translateY(100%);
-    transition: transform 200ms;
-}
-
 .container:has(.header.sticky) .footer {
     position: fixed;
     transform: translateY(0);
-}
-
-.social-link {
-    font-size: 3vh;
-    color: var(--first-color);
-}
-
-.social-link:hover {
-    opacity: 0.8;
 }
 
 path {
@@ -620,10 +390,12 @@ path {
     0% {
         transform: scaleY(0);
     }
+
     50% {
         transform: scaleY(1);
         transform: scaleX(1);
     }
+
     100% {
         transform: scaleX(14);
     }

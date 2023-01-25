@@ -19,9 +19,9 @@ const createWindow = () => {
 
 	mainWindow.setMenu(null);
 	mainWindow.maximize();
-	mainWindow.loadFile(path.join(__dirname, 'public/index.html'));
+	mainWindow.loadFile(path.join(__dirname, 'public/home/index.html'));
 
-	mainWindow.webContents.openDevTools();
+	//mainWindow.webContents.openDevTools();
 
 	mainWindow.on('close', (event) => {
 		if (app.quitting) {

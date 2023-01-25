@@ -1,6 +1,6 @@
 {
-	"name": "project",
-	"productName": "Project",
+	"name": "matrix-app",
+	"productName": "Matrix 2022-2023",
 	"version": "1.0.0",
 	"description": "School project",
 	"main": "src/index.js",
@@ -14,7 +14,7 @@
 	"keywords": [],
 	"author": {
 		"name": "Mani_Dev",
-		"email": "dhingramsp@Gmail.com"
+		"email": "dhingramsp@gmail.com"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -27,5 +27,18 @@
 		"@electron-forge/maker-squirrel": "^6.0.4",
 		"@electron-forge/maker-zip": "^6.0.4",
 		"electron": "22.0.0"
+	},
+	"electronPackagerConfig": {
+		"icon": "src/assets/icon.png",
+		"electronVersion": "1.4.4",
+		"asar": true
+	},
+	"electronWinstallerConfig": {
+		"name": "eapp",
+		"setupExe": "eapp-0.0.2.exe",
+		"description": "Sustainable Cities App",
+		"iconUrl": "src/assets/icon.png",
+		"setupIcon": "src/assets/icon.png",
+		"noMsi": true
 	}
 }

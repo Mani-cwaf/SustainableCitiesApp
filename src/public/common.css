@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Rubik:wght@400;700;900&display=swap');
+
+:root {
+    --green: rgb(41, 174, 29);
+    --light-green: rgb(37, 243, 33);
+}
+
+html {
+    font-family: 'Rubik';
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

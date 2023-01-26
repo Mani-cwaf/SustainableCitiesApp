@@ -1,18 +1,29 @@
 body {
-	background: rgb(24, 24, 24);
+	background: url(../assets/image1.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	padding: 0;
-	margin: 0;
-	width: 100vw;
 	height: 100vh;
 	margin: 0px;
 	overflow: hidden;
 	color: white;
 }
 
+.title {
+	display: block;
+	width: fit-content;
+	text-align: center;
+	font-family: 'Knewave';
+	font-weight: 400;
+	font-size: clamp(3rem, 5rem, 8rem);
+	box-shadow: 5px 15px 30px var(--light-green);
+	padding: 1.25rem;
+	border-radius: 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0, 0, 0, 0.25);
+}
+
 .panel {
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -27,16 +38,6 @@ body {
 	background-color: #c7dddf;
 	font-size: x-large;
 	text-align: center;
-
-}
-
-.result {
-	margin: 10px;
-	padding: 5px;
-	width: 80vw;
-	height: 10vh;
-	text-align: center;
-	font-size: 50px;
 
 }
 

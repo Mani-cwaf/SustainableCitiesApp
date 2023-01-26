@@ -37,7 +37,6 @@
 		"name": "eapp",
 		"setupExe": "eapp-0.0.2.exe",
 		"description": "Sustainable Cities App",
-		"iconUrl": "src/assets/icon.png",
 		"setupIcon": "src/assets/icon.png",
 		"noMsi": true
 	}

@@ -22,21 +22,32 @@ const createWindow = () => {
 	mainWindow.loadFile(path.join(__dirname, 'public/home/index.html'));
 
 	//mainWindow.webContents.openDevTools();
+	
+	backgroundWindow = new BrowserWindow({
+		icon: path.join(__dirname, 'assets/icon.ico'),
+		width: 800,
+		height: 600,
+		webPreferences: {
+			nodeIntegration: true,
+		},
+	});
+	backgroundWindow.loadFile(path.join(__dirname, 'public/background/index.html'));
+	backgroundWindow.hide();
 
 	mainWindow.on('close', (event) => {
 		if (app.quitting) {
-			mainWindow = null
+			mainWindow.destroy();
+			backgroundWindow.destroy();
 		} else {
 			event.preventDefault()
 			mainWindow.hide()
 		}
-	})
+	});
 };
 
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
-	tray.destroy();
 	app.quit()
 })
 

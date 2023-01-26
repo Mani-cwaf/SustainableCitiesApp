@@ -11,64 +11,70 @@ const Questions = [
     {
         id: 1,
         q: 'Examples of renewable energy sources include:',
-        a: [{ text: 'Bioethanol, natural gas, petroleum', isCorrect: false },
-        { text: 'Geothermal, wind, solar', isCorrect: true },
-        { text: 'Hydroelectricity, coal, nuclear', isCorrect: false },
-        { text: 'None of the above', isCorrect: false }
+        a: [
+            { text: 'Bioethanol, natural gas, petroleum', isCorrect: false },
+            { text: 'Geothermal, wind, solar', isCorrect: true },
+            { text: 'Hydroelectricity, coal, nuclear', isCorrect: false },
+            { text: 'None of the above', isCorrect: false }
         ]
 
     },
     {
         id: 2,
         q: 'How many people are expected to live in Asia-Pacific cities by 2030?',
-        a: [{ text: '1.3 million', isCorrect: false },
-        { text: '1.3 billion', isCorrect: false },
-        { text: '2.6 million', isCorrect: false },
-        { text: '2.6 billion', isCorrect: true }
+        a: [
+            { text: '1.3 million', isCorrect: false },
+            { text: '1.3 billion', isCorrect: false },
+            { text: '2.6 million', isCorrect: false },
+            { text: '2.6 billion', isCorrect: true }
         ]
 
     },
     {
         id: 3,
         q: 'Where is the worlds largest windfarm located?',
-        a: [{ text: 'United Kingdom', isCorrect: true },
-        { text: 'India', isCorrect: false },
-        { text: 'China', isCorrect: false },
-        { text: 'Austrailia', isCorrect: false }
+        a: [
+            { text: 'United Kingdom', isCorrect: true },
+            { text: 'India', isCorrect: false },
+            { text: 'China', isCorrect: false },
+            { text: 'Austrailia', isCorrect: false }
         ]
     },
     {
         id: 4,
         q: 'Which of these is an example of social sustainability?',
-        a: [{ text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
-        { text: 'There are enough schools and doctors', isCorrect: true },
-        { text: 'There are lots of well-paid jobs in energy development', isCorrect: false },
-        { text: 'None of the above', isCorrect: false }
+        a: [
+            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
+            { text: 'There are enough schools and doctors', isCorrect: true },
+            { text: 'There are lots of well-paid jobs in energy development', isCorrect: false },
+            { text: 'None of the above', isCorrect: false }
         ]
     },
     {
         id: 5,
         q: 'Which of these is an example of economic sustainability?',
-        a: [{ text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
-        { text: 'There are enough schools and doctors', isCorrect: false },
-        { text: 'There are lots of well-paid jobs in energy development', isCorrect: true },
-        { text: 'None of the above', isCorrect: false }
+        a: [
+            { text: 'There are enough schools and doctors', isCorrect: false },
+            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
+            { text: 'There are lots of well-paid jobs in energy development', isCorrect: true },
+            { text: 'None of the above', isCorrect: false }
         ]
     },
     {
         id: 6,
         q: 'Which of these is an example of environmental sustainability?',
-        a: [{ text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: true },
-        { text: 'There are enough schools and doctors', isCorrect: false },
-        { text: 'There are lots of well-paid jobs in energy development', isCorrect: false },
-        { text: 'None of the above', isCorrect: false }
+        a: [
+            { text: 'There are enough schools and doctors', isCorrect: true },
+            { text: 'There are lots of well-paid jobs in energy development', isCorrect: false },
+            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
+            { text: 'None of the above', isCorrect: false }
         ]
     }
 ];
 
 const options = document.querySelectorAll('.option');
 const submit = document.querySelector('.submit');
-const question = document.querySelector('.question');
+const question = document.querySelector('.question-container');
 
 let selected = false;
 

@@ -2,10 +2,11 @@ const Questions = [
     {
         id: 0,
         q: 'What is the definition of sustainability?',
-        a: [{ text: 'Actions that meet the needs of today, regardless of future generations.', isCorrect: false },
-        { text: 'Actions that meet the needs of future generations but not the needs of today.', isCorrect: false },
-        { text: 'Actions that meet the needs of today, without crippling the needs of future generations.', isCorrect: true },
-        { text: 'Actions that do not meet the needs of people.', isCorrect: false }
+        a: [
+            { text: 'Actions that meet the needs of today, regardless of future generations.', isCorrect: false },
+            { text: 'Actions that meet the needs of future generations but not the needs of today.', isCorrect: false },
+            { text: 'Actions that meet the needs of today, without crippling the needs of future generations.', isCorrect: true },
+            { text: 'Actions that do not meet the needs of people.', isCorrect: false }
         ]
     },
     {

@@ -8,21 +8,6 @@ body {
 	color: white;
 }
 
-.title {
-	display: block;
-	width: fit-content;
-	text-align: center;
-	font-family: 'Knewave';
-	font-weight: 400;
-	font-size: clamp(3rem, 5rem, 8rem);
-	box-shadow: 5px 15px 30px var(--light-green);
-	padding: 1.25rem;
-	border-radius: 1.5rem;
-	margin-right: auto;
-	margin-left: auto;
-	background: rgba(0, 0, 0, 0.25);
-}
-
 .panel {
 	display: flex;
 	flex-direction: column;
@@ -32,53 +17,53 @@ body {
 
 .question-container {
 	margin: 10px;
-	padding: 5px;
-	width: 80vw;
-	height: 10vh;
-	background-color: #c7dddf;
+	padding: 1rem;
+	background-color: var(--background);
 	font-size: x-large;
 	text-align: center;
-
+	border-radius: 0.5rem;
+	box-shadow: 2px 3px 10px var(--light-green);
 }
 
 .option-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	margin: 10px;
 	padding: 0.2rem;
-	width: 80vw;
-	height: 30vh;
-	background-color: #9eb1b3;
-
+	min-width: 40vw;
 }
 
 .option {
-	padding: 10px;
-	height: 10vh;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	height: 4.5rem;
 	font-size: larger;
-	background-color: lightskyblue;
-	border-radius: 25%;
+	background-color: var(--background);
+	border: none;
+	border-radius: 1rem;
+	color: white;
+	cursor: pointer;
+	box-shadow: 2px 3px 10px var(--green);
 }
 
 .option.active {
-	background-color: lightgoldenrodyellow;
-}
-
-.navigation {
-	width: 80vw;
-	height: 10vh;
-	margin: 10px;
-	padding: 5px;
-	display: flex;
-	justify-content: space-around;
-	background-color: #c7dddf;
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
 .submit {
-	background-color: #50DBB4;
-	width: 30vw;
+	background-color: var(--background);
+	width: 15vw;
 	height: 8vh;
-	padding: 5px;
+	padding: 0.2rem;
+	margin-top: 0.5rem;
 	font-size: larger;
+	color: white;
+	cursor: pointer;
+	font-family: 'Knewave';
+	box-shadow: 2px 3px 10px var(--green);
+	border: none;
+}
+
+.submit:hover, .option:hover {
+	transform: scale(1.01);
 }

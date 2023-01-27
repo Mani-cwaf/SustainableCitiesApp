@@ -3,6 +3,7 @@
 :root {
     --green: rgb(41, 174, 29);
     --light-green: rgb(37, 243, 33);
+    --background: rgba(0, 0, 0, 0.25);
 }
 
 html {
@@ -16,4 +17,19 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.title {
+	display: block;
+	width: fit-content;
+	text-align: center;
+	font-family: 'Knewave';
+	font-weight: 400;
+	font-size: clamp(3rem, 5rem, 8rem);
+	box-shadow: 3px 5px 30px var(--light-green);
+	padding: 1.25rem;
+	border-radius: 1.5rem;
+	margin-right: auto;
+	margin-left: auto;
+	background: var(--background);
 }

@@ -1,17 +1,8 @@
 body {
-    background: url(../assets/image1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     height: 100vh;
     margin: 0px;
     overflow: hidden;
     color: white;
-}
-
-.back {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .title {
@@ -68,4 +59,14 @@ nav {
     height: 100%;
     width: 0%;
     position: absolute;
+}
+
+p {
+    margin: 1.5rem;
+	padding: 2rem;
+	font-size: 2rem;
+	border-radius: 1rem;
+	box-shadow: 2px 4px 15px var(--green);
+    font-weight: 700;
+    background: var(--background);
 }

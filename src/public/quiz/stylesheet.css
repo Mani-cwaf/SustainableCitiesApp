@@ -1,7 +1,4 @@
 body {
-	background: url(../assets/image1.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
 	height: 100vh;
 	margin: 0px;
 	overflow: hidden;
@@ -19,7 +16,8 @@ body {
 	margin: 10px;
 	padding: 1rem;
 	background-color: var(--background);
-	font-size: x-large;
+	font-size: 1.75rem;
+	font-weight: 700;
 	text-align: center;
 	border-radius: 0.5rem;
 	box-shadow: 2px 3px 10px var(--light-green);
@@ -36,34 +34,38 @@ body {
 .option {
 	margin: 0.5rem;
 	padding: 0.5rem;
-	height: 4.5rem;
-	font-size: larger;
+	height: 4rem;
+	font-size: 1.2rem;
+	font-weight: 700;
 	background-color: var(--background);
 	border: none;
-	border-radius: 1rem;
 	color: white;
 	cursor: pointer;
 	box-shadow: 2px 3px 10px var(--green);
-}
-
-.option.active {
-	background-color: rgba(0, 0, 0, 0.75);
+	font-family: 'Rubik';
 }
 
 .submit {
 	background-color: var(--background);
 	width: 15vw;
-	height: 8vh;
-	padding: 0.2rem;
+	height: 6vh;
+	padding: 0.5rem;
 	margin-top: 0.5rem;
-	font-size: larger;
+	font-size: 2rem;
+	font-weight: 700;
 	color: white;
 	cursor: pointer;
-	font-family: 'Knewave';
 	box-shadow: 2px 3px 10px var(--green);
 	border: none;
+	font-family: 'Rubik';
+	border-radius: 1rem;
 }
 
 .submit:hover, .option:hover {
-	transform: scale(1.01);
+	transform: scale(1.02);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.option.active, option.active:hover {
+	background-color: rgba(0, 0, 0, 0.75);
 }

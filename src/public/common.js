@@ -8,3 +8,7 @@ const observer = new IntersectionObserver((elements) => {
     });
 });
 document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
+
+const home = () => {
+    window.location.assign('../home/index.html')
+}

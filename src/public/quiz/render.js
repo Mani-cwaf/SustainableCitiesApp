@@ -55,9 +55,9 @@ const Questions = [
         id: 5,
         q: 'Which of these is an example of economic sustainability?',
         a: [
-            { text: 'There are enough schools and doctors', isCorrect: false },
-            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
             { text: 'There are lots of well-paid jobs in energy development', isCorrect: true },
+            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
+            { text: 'There are enough schools and doctors', isCorrect: false },
             { text: 'None of the above', isCorrect: false }
         ]
     },
@@ -65,9 +65,9 @@ const Questions = [
         id: 6,
         q: 'Which of these is an example of environmental sustainability?',
         a: [
-            { text: 'There are enough schools and doctors', isCorrect: true },
+            { text: 'There are enough schools and doctors', isCorrect: false },
             { text: 'There are lots of well-paid jobs in energy development', isCorrect: false },
-            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: false },
+            { text: 'Rivers are kept clear and clean of waste and pollution', isCorrect: true },
             { text: 'None of the above', isCorrect: false }
         ]
     }

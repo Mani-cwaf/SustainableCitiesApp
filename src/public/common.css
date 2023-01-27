@@ -10,6 +10,12 @@ html {
     font-family: 'Rubik';
 }
 
+body {
+	background: url(./assets/background.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
 .no-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -32,4 +38,26 @@ html {
 	margin-right: auto;
 	margin-left: auto;
 	background: var(--background);
+}
+
+.back {
+	position: absolute;
+	width: fit-content;
+	text-align: center;
+	font-family: 'Knewave';
+	font-weight: 400;
+	font-size: clamp(1.5rem, 2.5rem, 4rem);
+	box-shadow: 3px 5px 30px var(--light-green);
+	padding: 0.5rem;
+	margin-left: 1rem;
+	border: none;
+	border-radius: 1rem;
+	background: var(--background);
+	color: white;
+	cursor: pointer;
+}
+
+.back svg {
+	position: relative;
+	top: 0.5rem;
 }

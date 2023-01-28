@@ -1,28 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Rubik:wght@400;700;900&display=swap');
 
 :root {
-    --green: rgb(41, 174, 29);
-    --light-green: rgb(37, 243, 33);
-    --background: rgba(0, 0, 0, 0.25);
+	--green: rgba(41, 174, 29, 0.75);
+	--light-green: rgba(27, 255, 23, 0.75);
+	--background: rgba(0, 0, 0, 0.3);
+	--dark-background: rgba(0, 0, 0, 0.5);
 }
 
 html {
-    font-family: 'Rubik';
+	font-family: 'Rubik';
 }
 
 body {
 	background: url(./assets/background.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	overflow-x: hidden;
+}
+
+body:has(.popup[data-active="true"]) > *:not(.popup) {
+	filter: blur(1px);
 }
 
 .no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button {
+	color: white;
+	font-family: 'Rubik';
+	border: none;
+	background: var(--background);
+	cursor: pointer;
+}
+
+.popup[data-active="true"] {
+	display: flex;
+}
+
+.popup[data-active="false"] {
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	flex-direction: column;
+	align-content: center;
+	width: 25rem;
+	height: 25rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 3px 5px 30px var(--light-green);
+	padding: 1.25rem;
+	border-radius: 1.5rem;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+
+.popup-title {
+	position: relative;
+	text-align: center;
+	font-family: 'Knewave';
+	font-size: 3rem;
+	margin: 0.5rem;
+	font-weight: 600;
+}
+
+.popup-content {
+	position: relative;
+	font-size: 1.5rem;
+	height: 20rem;
+	font-weight: 550;
+	margin: 0;
+}
+
+.popup-close {
+	position: relative;
+	padding: 0.5rem;
+	font-size: 2rem;
+	box-shadow: 3px 4px 10px var(--light-green);
+	border-radius: 0.5rem;
+	font-weight: 600;
+}
+
+.popup-close:hover {
+	transform: scale(1.015);
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 3px 5px 20px var(--light-green);
 }
 
 .title {
@@ -31,9 +100,9 @@ body {
 	text-align: center;
 	font-family: 'Knewave';
 	font-weight: 400;
-	font-size: clamp(3rem, 5rem, 8rem);
+	font-size: clamp(3rem, 4.5rem, 6rem);
 	box-shadow: 3px 5px 30px var(--light-green);
-	padding: 1.25rem;
+	padding: 1rem;
 	border-radius: 1.5rem;
 	margin-right: auto;
 	margin-left: auto;
@@ -50,10 +119,8 @@ body {
 	box-shadow: 3px 5px 30px var(--light-green);
 	padding: 0.5rem;
 	margin-left: 1rem;
-	border: none;
 	border-radius: 1rem;
 	background: var(--background);
-	color: white;
 	cursor: pointer;
 }
 

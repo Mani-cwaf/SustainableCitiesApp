@@ -1,65 +1,57 @@
 body {
-    background: url(../assets/image1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
     color: white;
 }
 
-.title {
-    display: block;
-    width: fit-content;
-    text-align: center;
-    font-family: 'Knewave';
-    font-weight: 400;
-    font-size: clamp(3rem, 5rem, 8rem);
-    box-shadow: 5px 15px 30px var(--light-green);
-    padding: 1.25rem;
-    border-radius: 1.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    background: rgba(0, 0, 0, 0.25);
+.rules {
+    margin: 10px;
+	padding: 1rem;
+	background-color: var(--background);
+	font-size: 1.7rem;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 0.5rem;
+	box-shadow: 3px 4px 15px var(--light-green);
 }
 
-nav {
+.cards {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
 }
 
-.nav-link {
-    color: white;
-    display: block;
-    font-weight: bold;
-    position: relative;
-    text-decoration: none;
-    font-size: clamp(3rem, 3.75rem, 6rem);
-    padding: 1rem;
-    bottom: 3.25rem;
-    padding-left: 2.5rem;
+.card {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    padding: 0.75rem;
+	margin: 0.5rem;
+	cursor: pointer;
+	box-shadow: 2px 3px 10px var(--light-green);
+	background: var(--background);
+	border-radius: 1rem;
 }
 
-.nav-link:hover {
-    color: var(--light-green);
+.card img {
+	width: 12vw;
 }
 
-.nav-link:hover:before {
-    transition: width 400ms ease;
-    width: 100%;
+.card:hover {
+	transform: scale(1.015);
+	background: var(--dark-background);
+	box-shadow: 2px 3px 10px var(---green);
 }
 
-.nav-link:before {
-    background: linear-gradient(to right, transparent, var(--green) var(--light-green-percent), var(--light-green));
-    content: "";
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 0%;
-    position: absolute;
+.healthbar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 10vh;
+	width: auto;
+}
+.healthbar img {
+	height: 10vh;
 }

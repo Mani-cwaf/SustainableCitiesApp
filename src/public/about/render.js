@@ -1,4 +1,4 @@
-for (const link of document.querySelectorAll(".nav-link")) {
+for (const link of document.querySelectorAll(`.nav-link`)) {
     link.onmousemove = e => {
         const decimal = e.clientX / link.offsetWidth;
 
@@ -8,6 +8,6 @@ for (const link of document.querySelectorAll(".nav-link")) {
 
         const lightgreenPercent = basePercent + adjustablePercent;
 
-        link.style.setProperty("--light-green-percent", `${lightgreenPercent}%`);
+        link.style.setProperty(`--light-green-percent`, `${lightgreenPercent}%`);
     }
 }

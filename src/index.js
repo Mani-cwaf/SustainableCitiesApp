@@ -22,7 +22,7 @@ const createWindow = () => {
 	mainWindow.loadFile(path.join(__dirname, 'public/home/index.html'));
 
 	//mainWindow.webContents.openDevTools();
-	
+
 	backgroundWindow = new BrowserWindow({
 		icon: path.resolve(__dirname, 'src/assets/icon.ico'),
 		width: 800,

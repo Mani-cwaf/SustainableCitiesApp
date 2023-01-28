@@ -1,14 +1,10 @@
-const observer = new IntersectionObserver((elements) => {
-    elements.forEach((element) => {
-        if (element.isIntersecting) {
-            element.target.classList.add('show');
-        } else {
-            element.target.classList.remove('show');
-        }
-    });
-});
-document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
-
 const home = () => {
     window.location.assign('../home/index.html')
+}
+
+const popupClose = () => {
+    document.querySelector('.popup').dataset.active = 'false';
+    document.querySelector('.popup-title').innerHTML = '';
+    document.querySelector('.popup-content').innerHTML = '';
+    document.querySelector('.popup-close').innerHTML = 'Close';
 }

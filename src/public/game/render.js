@@ -3,71 +3,71 @@ const cardImages = [
         index: 0,
         img: `card-bag.png`,
         name: `Plastic Bag`,
-        lifeSpan: `High`,
+        lifeSpan: `Low`,
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Low`,
-        score: 5
+        score: 15
     },
     {
         index: 1,
         img: `card-bread.png`,
         name: `Bread`,
-        lifeSpan: `Medium`,
-        carbonEmissions: `Low`,
+        lifeSpan: `Short`,
+        carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
-        price: `Medium`,
-        score: 9
+        price: `Low`,
+        score: 55
     },
     {
         index: 2,
         img: `card-burger.png`,
         name: `Burger`,
         lifeSpan: `Low`,
-        carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
-        price: `Medium`,
-        score: 8
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
+        price: `High`,
+        score: 10
     },
     {
         index: 3,
         img: `card-can.png`,
         name: `Aluminum Can`,
         lifeSpan: `High`,
-        carbonEmissions: `High`,
-        ecoFriendly: `Low`,
-        price: `Medium`,
-        score: 7
+        carbonEmissions: `Medium`,
+        ecoFriendly: `High`,
+        price: `Low`,
+        score: 70
     },
     {
         index: 4,
         img: `card-cheese.png`,
         name: `Cheese`,
-        lifeSpan: `High`,
-        carbonEmissions: `Low`,
+        lifeSpan: `Medium`,
+        carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
-        price: `Medium`,
-        score: 9
+        price: `High`,
+        score: 50
     },
     {
         index: 5,
         img: `card-cotton.png`,
         name: `Cotton`,
         lifeSpan: `Medium`,
-        carbonEmissions: `Medium`,
-        ecoFriendly: `Low`,
-        price: `Medium`,
-        score: 5
+        carbonEmissions: `High`,
+        ecoFriendly: `Medium`,
+        price: `Low`,
+        score: 40
     },
     {
         index: 6,
         img: `card-donut.png`,
         name: `Donut`,
         lifeSpan: `Low`,
-        carbonEmissions: `Medium`,
-        ecoFriendly: `Medium`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
         price: `Medium`,
-        score: 7
+        score: 15
     },
     {
         index: 7,
@@ -75,29 +75,29 @@ const cardImages = [
         name: `Flour`,
         lifeSpan: `High`,
         carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
+        ecoFriendly: `High`,
         price: `Low`,
-        score: 8
+        score: 95
     },
     {
         index: 8,
         img: `card-honey.png`,
         name: `Honey`,
-        lifeSpan: `Medium`,
+        lifeSpan: `High`,
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `High`,
-        score: 7
+        score: 90
     },
     {
         index: 9,
         img: `card-icecream.png`,
         name: `Ice Cream`,
         lifeSpan: `Low`,
-        carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
         price: `Medium`,
-        score: 5
+        score: 20
     },
     {
         index: 10,
@@ -105,59 +105,69 @@ const cardImages = [
         name: `Mango`,
         lifeSpan: `Medium`,
         carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
-        price: `Low`,
-        score: 7
+        ecoFriendly: `High`,
+        price: `Medium`,
+        score: 80
     },
     {
         index: 11,
         img: `card-milk.png`,
         name: `Milk`,
         lifeSpan: `Low`,
-        carbonEmissions: `Low`,
+        carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `Low`,
-        score: 7
+        score: 45
     },
     {
         index: 12,
         img: `card-onion.png`,
         name: `Onion`,
-        lifeSpan: `Medium`,
+        lifeSpan: `High`,
         carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
+        ecoFriendly: `High`,
         price: `Low`,
-        score: 8
+        score: 95
     },
     {
         index: 13,
         img: `card-sandwich.png`,
         name: `Sandwich`,
-        lifeSpan: `Medium`,
-        carbonEmissions: `Low`,
-        ecoFriendly: `Low`,
+        lifeSpan: `Low`,
+        carbonEmissions: `Medium`,
+        ecoFriendly: `Medium`,
         price: `Medium`,
-        score: 7
+        score: 60
     },
     {
         index: 14,
         img: `card-paperbag.png`,
         name: `Paper Bag`,
-        lifeSpan: `Medium`,
+        lifeSpan: `Low`,
         carbonEmissions: `Low`,
-        ecoFriendly: `Medium`,
-        price: `Medium`,
-        score: 6
+        ecoFriendly: `High`,
+        price: `Low`,
+        score: 70
     },
     {
         index: 15,
         img: `card-basket.png`,
         name: `Plastic Basket`,
-        lifeSpan: `High`,
-        carbonEmissions: `Medium`,
+        lifeSpan: `Medium`,
+        carbonEmissions: `High`,
         ecoFriendly: `Low`,
-        price: `Medium`,
-        score: 5
+        price: `Low`,
+        score: 20
+    },
+    {
+        index: 16,
+        img: `card-battery.png`,
+        name: `Single Use Battery`,
+        lifeSpan: `Low`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
+        price: `Low`,
+        score: 15
     },
 ]
 
@@ -176,7 +186,7 @@ const wrong = () => {
     }
     if (health > 0) {
         popupTitle.innerHTML = `Incorrect`;
-        popupText.innerHTML = `You chose the wrong item, the item that is the best for the enviorment would be: ` + correctCard.dataset.name;
+        popupText.innerHTML = `The correct answer is: ${correctCard.dataset.name}`;
         popup.dataset.active = `true`;
     } else {
         popupTitle.innerHTML = `You Lost`;
@@ -194,9 +204,9 @@ const leaveListener = () => {
 }
 
 const right = () => {
-    if (id < 5) {
+    if (id < 10) {
         popupTitle.innerHTML = `Correct!`;
-        popupText.innerHTML = `the item with the least enviormental impact is in fact: ` + correctCard.dataset.name;
+        popupText.innerHTML = `${correctCard.dataset.name} is the correct answer`;
         popup.dataset.active = `true`;
         popup.addEventListener(`click`, nextListener);
     } else {
@@ -219,7 +229,7 @@ const nextListener = () => {
 
 let id = 0
 const newCards = () => {
-    if (id <= 5) {
+    if (id <= 10) {
         let previousNumbers = [];
         for (const card of cards) {
             let newNumber = Math.floor(Math.random() * (cardImages.length - 1)) + 1;
@@ -231,7 +241,8 @@ const newCards = () => {
             card.dataset.name = cardToCreate.name;
             card.children[0].innerHTML = cardToCreate.name;
             card.children[1].src = `../assets/cards/` + cardToCreate.img;
-            card.children[2].innerHTML = `Lifespan: ${cardToCreate.lifeSpan} <br> Carbon Emissions: ${cardToCreate.carbonEmissions} <br> Eco Friendly: ${cardToCreate.ecoFriendly} <br> Price: ${cardToCreate.price} <br>`;
+            card.children[2].innerHTML = `Lifespan: ${cardToCreate.lifeSpan} <br> Carbon Emissions: ${cardToCreate.carbonEmissions} <br> Eco Friendliness: ${cardToCreate.ecoFriendly} <br> Price: ${cardToCreate.price} <br>`;
+            card.style.display = 'flex';
         }
         id++;
         correctCard = cards[previousNumbers.indexOf(Math.max(...previousNumbers))];
@@ -245,6 +256,7 @@ for (const card of cards) {
             right()
         } else {
             wrong()
+            card.style.display = 'none';
         }
     });
 }

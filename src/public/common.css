@@ -5,6 +5,8 @@
 	--light-green: rgba(27, 255, 23, 0.75);
 	--background: rgba(0, 0, 0, 0.3);
 	--dark-background: rgba(0, 0, 0, 0.5);
+	--normal-box-shadow: 0px 0px 10px var(--light-green);
+	--large-box-shadow: 0px 0px 25px var(--light-green);
 }
 
 html {
@@ -16,26 +18,39 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	overflow-x: hidden;
+	overflow-y: overlay;
+	color: white;
+	height: 100vh;
+	margin: 0px;
+	scroll-behavior: smooth;
 }
 
-body:has(.popup[data-active="true"]) > *:not(.popup) {
-	filter: blur(1px);
-}
-
-.no-select {
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+body:has(.popup[data-active="true"])>*:not(.popup) {
+	filter: blur(2.5px);
+	pointer-events: none;
 	user-select: none;
 }
 
-button {
+.no-select {
+	user-select: none;
+}
+
+.box-shadow {
+	box-shadow: var(--normal-box-shadow);
+}
+
+.clickable {
 	color: white;
 	font-family: 'Rubik';
 	border: none;
-	background: var(--background);
 	cursor: pointer;
+	background: var(--background);
+}
+
+.clickable:hover {
+	box-shadow: var(--large-box-shadow);
+	background: var(--dark-background);
+	transform: scale(1.01);
 }
 
 .popup[data-active="true"] {
@@ -55,10 +70,9 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	box-shadow: 3px 5px 30px var(--light-green);
 	padding: 1.25rem;
 	border-radius: 1.5rem;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.85);
 	z-index: 999;
 }
 
@@ -83,15 +97,8 @@ button {
 	position: relative;
 	padding: 0.5rem;
 	font-size: 2rem;
-	box-shadow: 3px 4px 10px var(--light-green);
 	border-radius: 0.5rem;
 	font-weight: 600;
-}
-
-.popup-close:hover {
-	transform: scale(1.015);
-	background-color: rgba(0, 0, 0, 0.4);
-	box-shadow: 3px 5px 20px var(--light-green);
 }
 
 .title {
@@ -101,7 +108,6 @@ button {
 	font-family: 'Knewave';
 	font-weight: 400;
 	font-size: clamp(3rem, 4.5rem, 6rem);
-	box-shadow: 3px 5px 30px var(--light-green);
 	padding: 1rem;
 	border-radius: 1.5rem;
 	margin-right: auto;
@@ -127,4 +133,29 @@ button {
 .back svg {
 	position: relative;
 	top: 0.5rem;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background: transparent;
+	-webkit-border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+	background: rgba(0, 0, 0, 0.6);
+	-webkit-border-radius: 5rem;
+}
+
+::selection {
+	background: var(--background);
 }

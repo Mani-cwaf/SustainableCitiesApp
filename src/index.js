@@ -1,10 +1,21 @@
-const { app, BrowserWindow, Menu, Tray } = require('electron');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 const path = require('path');
 let mainWindow;
 
 if (require('electron-squirrel-startup')) {
 	app.quit();
 }
+
+function registerShortcuts() {
+	globalShortcut.register('CommandOrControl+Shift+I', () => {
+		mainWindow.webContents.openDevTools();
+	})
+}
+
+function unregisterShortcuts() {
+	globalShortcut.unregister('CommandOrControl+Shift+I', () => {
+		mainWindow.webContents.openDevTools();
+	})}
 
 const createWindow = () => {
 	mainWindow = new BrowserWindow({
@@ -21,8 +32,6 @@ const createWindow = () => {
 	mainWindow.maximize();
 	mainWindow.loadFile(path.join(__dirname, 'public/home/index.html'));
 
-	//mainWindow.webContents.openDevTools();
-
 	backgroundWindow = new BrowserWindow({
 		icon: path.resolve(__dirname, 'src/assets/icon.ico'),
 		width: 800,
@@ -34,14 +43,20 @@ const createWindow = () => {
 	backgroundWindow.loadFile(path.join(__dirname, 'public/background/index.html'));
 	backgroundWindow.hide();
 
-	mainWindow.on('close', (event) => {
+	mainWindow.on('close', () => {
 		mainWindow.destroy();
 		backgroundWindow.destroy();
 	});
 };
 
-app.on('ready', createWindow);
+app.on('ready', () => {
+	createWindow();
+	registerShortcuts();
+	mainWindow.on('focus', registerShortcuts);
+	mainWindow.on('blur', unregisterShortcuts);
+});
 
 app.on('window-all-closed', () => {
 	app.quit()
+	process.exit(0);
 })

@@ -1,15 +1,8 @@
-body {
-    height: 100vh;
-    margin: 0px;
-    color: white;
-}
-
 p {
     margin: 1.5rem;
 	padding: 2rem;
 	font-size: 2rem;
 	border-radius: 1rem;
-	box-shadow: 2px 4px 15px var(--green);
     font-weight: 700;
     background: var(--background);
 }

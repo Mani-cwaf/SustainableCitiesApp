@@ -1,9 +1,3 @@
-body {
-	height: 100vh;
-	margin: 0px;
-	color: white;
-}
-
 .panel {
 	display: flex;
 	flex-direction: column;
@@ -19,7 +13,6 @@ body {
 	font-weight: 700;
 	text-align: center;
 	border-radius: 0.5rem;
-	box-shadow: 3px 4px 15px var(--light-green);
 }
 
 .option-container {
@@ -39,11 +32,9 @@ body {
 	height: 4rem;
 	font-size: 1.3rem;
 	font-weight: 700;
-	background-color: var(--background);
 	border: none;
 	color: white;
 	cursor: pointer;
-	box-shadow: 2px 3px 10px var(--light-green);
 	font-family: 'Rubik';
 }
 
@@ -55,23 +46,14 @@ body {
 	font-weight: 700;
 	color: white;
 	cursor: pointer;
-	box-shadow: 2px 3px 10px var(--light-green);
 	border: none;
 	font-family: 'Rubik';
 	border-radius: 1rem;
 }
 
-.submit:hover,
-.option:hover {
-	transform: scale(1.015);
-	background: var(--dark-background);
-	box-shadow: 3px 3px 15px var(--light-green);
-}
-
 .option.active,
 option.active:hover {
-	background: rgba(0, 0, 0, 0.7);
-	box-shadow: 4px 5px 25px var(--green);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .healthbar {

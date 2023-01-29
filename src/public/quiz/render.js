@@ -8,18 +8,18 @@ const Questions = [
             { text: `Actions that meet the needs of today, without crippling the needs of future generations.`, isCorrect: true },
             { text: `Actions that do not meet the needs of people.`, isCorrect: false }
         ],
-        i: ``
+        i: `Sustainable actions meet both the needs of today and future generations.`
     },
     {
         id: 1,
-        q: `Examples of renewable energy sources include:`,
+        q: `which of the following are all examples of renewable energy sources?`,
         a: [
             { text: `Bioethanol, natural gas, petroleum`, isCorrect: false },
             { text: `Geothermal, wind, solar`, isCorrect: true },
             { text: `Hydroelectricity, coal, nuclear`, isCorrect: false },
             { text: `None of the above`, isCorrect: false }
         ],
-        i: ``
+        i: `Geothermal, wind, and solar are all examples of renewable energy sources`
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ const Questions = [
             { text: `2.6 million`, isCorrect: false },
             { text: `2.6 billion`, isCorrect: true }
         ],
-        i: ``
+        i: `By 2030, approximately 2.6 billion are expected to populate Asia-Pacific cities.`
     },
     {
         id: 3,
@@ -41,7 +41,7 @@ const Questions = [
             { text: `China`, isCorrect: false },
             { text: `Austrailia`, isCorrect: false }
         ],
-        i: ``
+        i: `The world’s largest wind farm is located in the United Kingdom.`
     },
     {
         id: 4,
@@ -50,31 +50,31 @@ const Questions = [
             { text: `Rivers are kept clear and clean of waste and pollution`, isCorrect: false },
             { text: `There are enough schools and doctors`, isCorrect: true },
             { text: `There are lots of well-paid jobs in energy development`, isCorrect: false },
-            { text: `None of the above`, isCorrect: false }
+            { text: `International trade is eradicated.`, isCorrect: false }
         ],
-        i: ``
+        i: `Having enough schools and doctors will contribute to social sustainability.`
     },
     {
         id: 5,
         q: `Which of these is an example of economic sustainability?`,
         a: [
-            { text: `There are lots of well-paid jobs in energy development`, isCorrect: true },
             { text: `Rivers are kept clear and clean of waste and pollution`, isCorrect: false },
             { text: `There are enough schools and doctors`, isCorrect: false },
-            { text: `None of the above`, isCorrect: false }
+            { text: `There are lots of well-paid jobs in energy development`, isCorrect: true },
+            { text: `International trade is eradicated`, isCorrect: false }
         ],
-        i: ``
+        i: `Having lots of well-paid jobs in the renewable energy development sector will contribute substantially to economic sustainability.`
     },
     {
         id: 6,
         q: `Which of these is an example of environmental sustainability?`,
         a: [
+            { text: `Rivers are kept clear and clean of waste and pollution`, isCorrect: true },
             { text: `There are enough schools and doctors`, isCorrect: false },
             { text: `There are lots of well-paid jobs in energy development`, isCorrect: false },
-            { text: `Rivers are kept clear and clean of waste and pollution`, isCorrect: true },
-            { text: `None of the above`, isCorrect: false }
+            { text: `International trade is eradicated`, isCorrect: false }
         ],
-        i: ``
+        i: `Keeping rivers clear and clean of waste and pollution will contribute to environmental sustainability.`
     }
 ];
 
@@ -100,8 +100,8 @@ const wrong = () => {
         }
     }
     if (health > 0) {
-        popupTitle.innerHTML = `Incorrect`;
-        popupText.innerHTML = Questions[id].i;
+        popupTitle.innerHTML = `Incorrect!`;
+        popupText.innerHTML = Questions[id-1].i;
         popup.dataset.active = `true`;
     } else {
         popupTitle.innerHTML = `You Lost`;
@@ -123,8 +123,8 @@ const right = () => {
         for (let option of options) {
             option.style.color = `white`;
         }
-        popupTitle.innerHTML = `Correct!`;
-        popupText.innerHTML = Questions[id].i;
+        popupTitle.innerHTML = `Good Job!`;
+        popupText.innerHTML = Questions[id-1].i;
         popup.dataset.active = `true`;
         popup.addEventListener(`click`, nextListener);
     } else {
@@ -132,7 +132,7 @@ const right = () => {
         if (health == 2) {
             popupText.innerHTML = `Amazing! You answered all the questions correctly without making a single mistake.`;
         } else {
-            popupText.innerHTML = `Good job, you answered all the questions correctly.`;
+            popupText.innerHTML = `Great job, you answered all the questions.`;
         }
         popupCloseButton.innerHTML = `Home`
         popup.dataset.active = `true`;

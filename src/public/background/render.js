@@ -1,5 +1,8 @@
-const backgroundMusic = document.querySelector('audio')
+const backgroundMusic = document.querySelector(`audio`)
 
-backgroundMusic.loop = true
-backgroundMusic.volume = 0.1;
-backgroundMusic.play()
+backgroundMusic.loop = true;
+backgroundMusic.play();
+
+setInterval(() => {
+    backgroundMusic.volume = ;
+}, 1000);

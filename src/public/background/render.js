@@ -4,5 +4,6 @@ backgroundMusic.loop = true;
 backgroundMusic.play();
 
 setInterval(() => {
-    backgroundMusic.volume = ;
+    console.log(getSettings());
+    backgroundMusic.volume = window.electron.getSettings();
 }, 1000);

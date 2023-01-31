@@ -1,26 +1,27 @@
 const { app, BrowserWindow, globalShortcut, ipcMain } = require(`electron`);
 let path = require(`path`);
 let mainWindow;
-let volume = 0;
+let volume = 1;
 
 if (require(`electron-squirrel-startup`)) {
 	app.quit();
 }
 
+const clamp = (num) => Math.min(Math.max(num, 0), 1);
+
 ipcMain.handle('getSettings', () => {
-	return volume;
+	return clamp(volume);
 })
 
 function registerShortcuts() {
 	globalShortcut.register(`CommandOrControl+Shift+I`, () => {
 		mainWindow.webContents.openDevTools();
 	})
-	globalShortcut.register(`CommandOrControl+Shift+M`, () => {
-		if (volume == 0.5) {
-			volume = 0;
-		} else {
-			volume = 0.5;
-		}
+	globalShortcut.register(`CommandOrControl+Up`, () => {
+		volume = clamp(volume) + 0.05;
+	})
+	globalShortcut.register(`CommandOrControl+Down`, () => {
+		volume = clamp(volume) - 0.05;
 	})
 }
 
@@ -28,12 +29,11 @@ function unregisterShortcuts() {
 	globalShortcut.unregister(`CommandOrControl+Shift+I`, () => {
 		mainWindow.webContents.openDevTools();
 	})
-	globalShortcut.unregister(`CommandOrControl+Shift+M`, () => {
-		if (volume == 0.5) {
-			volume = 0;
-		} else {
-			volume = 0.5;
-		}
+	globalShortcut.unregister(`CommandOrControl+Up`, () => {
+		volume = clamp(volume) + 0.05;
+	})
+	globalShortcut.unregister(`CommandOrControl+Down`, () => {
+		volume = clamp(volume) - 0.05;
 	})
 }
 
@@ -44,7 +44,6 @@ const createWindow = () => {
 		height: 600,
 		webPreferences: {
 			nodeIntegration: true,
-			preload: path.join(__dirname, `preload.js`),
 		},
 	});
 
@@ -62,8 +61,7 @@ const createWindow = () => {
 		},
 	});
 	backgroundWindow.loadFile(path.join(__dirname, `public/background/index.html`));
-	backgroundWindow.webContents.openDevTools();
-	//backgroundWindow.hide();
+	backgroundWindow.hide();
 
 	mainWindow.on(`close`, () => {
 		mainWindow.destroy();
@@ -82,9 +80,3 @@ app.on(`window-all-closed`, () => {
 	app.quit()
 	process.exit(0);
 })
-
-ipcMain.handle('myfunc', async (event, arg) => {
-	return new Promise(function (resolve, reject) {
-		resolve("this worked!");
-	});
-});

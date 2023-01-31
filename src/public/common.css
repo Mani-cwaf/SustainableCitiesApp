@@ -3,8 +3,8 @@
 :root {
 	--green: rgba(41, 174, 29, 0.75);
 	--light-green: rgba(27, 255, 23, 0.75);
-	--background: rgba(0, 0, 0, 0.3);
-	--dark-background: rgba(0, 0, 0, 0.5);
+	--background: rgba(0, 0, 0, 0.35);
+	--dark-background: rgba(0, 0, 0, 0.6);
 	--normal-box-shadow: 0px 0px 10px var(--light-green);
 	--large-box-shadow: 0px 0px 25px var(--light-green);
 }
@@ -133,6 +133,12 @@ body:has(.popup[data-active="true"])>*:not(.popup) {
 .back svg {
 	position: relative;
 	top: 0.5rem;
+	left: 0.25rem;
+	transition: all 75ms ease-out;
+}
+
+.back:hover svg {
+	left: -0.25rem;
 }
 
 ::-webkit-scrollbar {

@@ -2,8 +2,15 @@ const backgroundMusic = document.querySelector(`audio`)
 
 backgroundMusic.loop = true;
 backgroundMusic.play();
+let volume = 0;
+
+const getSettings = () => {
+    window.electron.getSettings().then((value) => {
+        volume = value;
+    })
+    return volume;
+}
 
 setInterval(() => {
-    console.log(getSettings());
-    backgroundMusic.volume = window.electron.getSettings();
-}, 1000);
+    backgroundMusic.volume = getSettings() / 10;
+}, 50);

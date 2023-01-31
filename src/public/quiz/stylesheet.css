@@ -20,7 +20,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 0.2rem;
-	min-width: 40vw;
+	min-width: 75rem;
 	background: var(--background);
 	border-radius: 0.5rem;
 	margin: 1.25rem;
@@ -53,7 +53,7 @@
 
 .option.active,
 option.active:hover {
-	background: rgba(0, 0, 0, 0.8);
+	font-weight: 750;
 }
 
 .healthbar {

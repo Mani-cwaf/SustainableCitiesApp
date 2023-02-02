@@ -7,6 +7,7 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Low`,
+        catagory: `container`,
         score: 15
     },
     {
@@ -17,6 +18,7 @@ const cardImages = [
         carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `Low`,
+        catagory: `food-normal`,
         score: 55
     },
     {
@@ -27,6 +29,7 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `High`,
+        catagory: `food-junk`,
         score: 10
     },
     {
@@ -37,6 +40,7 @@ const cardImages = [
         carbonEmissions: `Medium`,
         ecoFriendly: `High`,
         price: `Low`,
+        catagory: `container`,
         score: 70
     },
     {
@@ -47,17 +51,19 @@ const cardImages = [
         carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `High`,
+        catagory: `food-normal`,
         score: 50
     },
     {
         index: 5,
-        img: `card-cotton.png`,
-        name: `Cotton`,
-        lifeSpan: `Medium`,
-        carbonEmissions: `High`,
-        ecoFriendly: `Medium`,
+        img: `card-watermelon.png`,
+        name: `Watermelon`,
+        lifeSpan: `Low`,
+        carbonEmissions: `Low`,
+        ecoFriendly: `High`,
         price: `Low`,
-        score: 40
+        catagory: `food-fresh`,
+        score: 85
     },
     {
         index: 6,
@@ -67,6 +73,7 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Medium`,
+        catagory: `food-dessert`,
         score: 15
     },
     {
@@ -77,6 +84,7 @@ const cardImages = [
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `Low`,
+        catagory: `food-ingredient`,
         score: 95
     },
     {
@@ -87,6 +95,7 @@ const cardImages = [
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `High`,
+        catagory: `sweetener`,
         score: 90
     },
     {
@@ -97,6 +106,7 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Medium`,
+        catagory: `food-dessert`,
         score: 20
     },
     {
@@ -107,17 +117,19 @@ const cardImages = [
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `Medium`,
+        catagory: `food-fresh`,
         score: 80
     },
     {
         index: 11,
-        img: `card-milk.png`,
-        name: `Milk`,
-        lifeSpan: `Low`,
+        img: `card-jaggery.png`,
+        name: `Jaggery`,
+        lifeSpan: `High`,
         carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `Low`,
-        score: 45
+        catagory: `sweetener`,
+        score: 68
     },
     {
         index: 12,
@@ -127,6 +139,7 @@ const cardImages = [
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `Low`,
+        catagory: `food-fresh`,
         score: 95
     },
     {
@@ -137,6 +150,7 @@ const cardImages = [
         carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `Medium`,
+        catagory: `food-junk`,
         score: 60
     },
     {
@@ -147,6 +161,7 @@ const cardImages = [
         carbonEmissions: `Low`,
         ecoFriendly: `High`,
         price: `Low`,
+        catagory: `container`,
         score: 70
     },
     {
@@ -157,6 +172,7 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Low`,
+        catagory: `container`,
         score: 20
     },
     {
@@ -167,7 +183,85 @@ const cardImages = [
         carbonEmissions: `High`,
         ecoFriendly: `Low`,
         price: `Low`,
+        catagory: `electronics`,
         score: 15
+    },
+    {
+        index: 17,
+        img: `card-tupperware.png`,
+        name: `Plastic Tupperware`,
+        lifeSpan: `High`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
+        price: `Low`,
+        catagory: `container`,
+        score: 40
+    },
+    {
+        index: 18,
+        img: `card-butter.png`,
+        name: `Butter`,
+        lifeSpan: `Medium`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Medium`,
+        price: `Medium`,
+        catagory: `food-ingredient`,
+        score: 50
+    },
+    {
+        index: 19,
+        img: `card-flashlight.png`,
+        name: `Solar Powered Flashlight`,
+        lifeSpan: `High`,
+        carbonEmissions: `Low`,
+        ecoFriendly: `High`,
+        price: `High`,
+        catagory: `electronics`,
+        score: 87
+    },
+    {
+        index: 20,
+        img: `card-sugar.png`,
+        name: `Sugar`,
+        lifeSpan: `Medium`,
+        carbonEmissions: `Medium`,
+        ecoFriendly: `Medium`,
+        price: `Low`,
+        catagory: `sweetener`,
+        score: 55
+    },
+    {
+        index: 21,
+        img: `card-bulb.png`,
+        name: `Incandescent Light Bulb`,
+        lifeSpan: `Low`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
+        price: `Low`,
+        catagory: `electronics`,
+        score: 25
+    },
+    {
+        index: 22,
+        img: `card-cake.png`,
+        name: `Cake`,
+        lifeSpan: `Low`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Medium`,
+        price: `Mediums`,
+        catagory: `food-dessert`,
+        score: 55
+    },
+    {
+        index: 23,
+        img: `card-pizza.png`,
+        name: `Pizza`,
+        lifeSpan: `Low`,
+        carbonEmissions: `High`,
+        ecoFriendly: `Low`,
+        price: `Medium`,
+        catagory: `food-junk`,
+        score: 55
     },
 ]
 
@@ -231,13 +325,26 @@ let id = 0
 const newCards = () => {
     if (id <= 10) {
         let previousNumbers = [];
+        let previousCatagories = [];
         for (const card of cards) {
             let newNumber = Math.floor(Math.random() * (cardImages.length - 1)) + 1;
-            while (previousNumbers.indexOf(cardImages[newNumber].score) != -1) {
-                newNumber = Math.floor(Math.random() * (cardImages.length - 1)) + 1;
-            }
-            previousNumbers.push(cardImages[newNumber].score);
             let cardToCreate = cardImages[newNumber];
+            if (previousCatagories.length == 0) {
+                while (previousNumbers.indexOf(cardToCreate.score) != -1) {
+                    newNumber = Math.floor(Math.random() * (cardImages.length - 1)) + 1;
+                    cardToCreate = cardImages[newNumber];
+                    console.log(cardImages[newNumber])
+                }
+            } else {
+                while (previousNumbers.indexOf(cardToCreate.score) != -1 || previousCatagories.indexOf(cardToCreate.catagory) == -1) {
+                    newNumber = Math.floor(Math.random() * (cardImages.length - 1)) + 1;
+                    cardToCreate = cardImages[newNumber];
+                    console.log(cardImages[newNumber])
+                }
+            }
+
+            previousNumbers.push(cardToCreate.score);
+            previousCatagories.push(cardToCreate.catagory);
             card.dataset.name = cardToCreate.name;
             card.children[0].innerHTML = cardToCreate.name;
             card.children[1].src = `../assets/cards/` + cardToCreate.img;

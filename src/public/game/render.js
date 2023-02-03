@@ -12,17 +12,6 @@ const cardImages = [
     },
     {
         index: 1,
-        img: `card-bread.png`,
-        name: `Bread`,
-        lifeSpan: `Short`,
-        carbonEmissions: `Medium`,
-        ecoFriendly: `Medium`,
-        price: `Low`,
-        catagory: `food-normal`,
-        score: 55
-    },
-    {
-        index: 2,
         img: `card-burger.png`,
         name: `Burger`,
         lifeSpan: `Low`,
@@ -30,10 +19,10 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `High`,
         catagory: `food-junk`,
-        score: 10
+        score: 55
     },
     {
-        index: 3,
+        index: 2,
         img: `card-can.png`,
         name: `Aluminum Can`,
         lifeSpan: `High`,
@@ -44,18 +33,7 @@ const cardImages = [
         score: 70
     },
     {
-        index: 4,
-        img: `card-cheese.png`,
-        name: `Cheese`,
-        lifeSpan: `Medium`,
-        carbonEmissions: `Medium`,
-        ecoFriendly: `Medium`,
-        price: `High`,
-        catagory: `food-normal`,
-        score: 50
-    },
-    {
-        index: 5,
+        index: 3,
         img: `card-watermelon.png`,
         name: `Watermelon`,
         lifeSpan: `Low`,
@@ -66,7 +44,7 @@ const cardImages = [
         score: 85
     },
     {
-        index: 6,
+        index: 4,
         img: `card-donut.png`,
         name: `Donut`,
         lifeSpan: `Low`,
@@ -74,21 +52,21 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `Medium`,
         catagory: `food-dessert`,
-        score: 15
+        score: 35
     },
     {
-        index: 7,
+        index: 5,
         img: `card-oil.png`,
         name: `Olive Oil`,
         lifeSpan: `High`,
         carbonEmissions: `High`,
         ecoFriendly: `Medium`,
         price: `Medium`,
-        catagory: `food-ingredient`,
+        catagory: `fat`,
         score: 30
     },
     {
-        index: 8,
+        index: 6,
         img: `card-honey.png`,
         name: `Honey`,
         lifeSpan: `High`,
@@ -99,7 +77,7 @@ const cardImages = [
         score: 90
     },
     {
-        index: 9,
+        index: 7,
         img: `card-icecream.png`,
         name: `Ice Cream`,
         lifeSpan: `Low`,
@@ -110,7 +88,7 @@ const cardImages = [
         score: 20
     },
     {
-        index: 10,
+        index: 8,
         img: `card-mango.png`,
         name: `Mango`,
         lifeSpan: `Medium`,
@@ -121,7 +99,7 @@ const cardImages = [
         score: 80
     },
     {
-        index: 11,
+        index: 9,
         img: `card-jaggery.png`,
         name: `Jaggery`,
         lifeSpan: `High`,
@@ -132,7 +110,7 @@ const cardImages = [
         score: 68
     },
     {
-        index: 12,
+        index: 10,
         img: `card-onion.png`,
         name: `Onion`,
         lifeSpan: `High`,
@@ -143,7 +121,7 @@ const cardImages = [
         score: 95
     },
     {
-        index: 13,
+        index: 11,
         img: `card-sandwich.png`,
         name: `Sandwich`,
         lifeSpan: `Low`,
@@ -154,7 +132,7 @@ const cardImages = [
         score: 60
     },
     {
-        index: 14,
+        index: 12,
         img: `card-paperbag.png`,
         name: `Paper Bag`,
         lifeSpan: `Low`,
@@ -162,10 +140,10 @@ const cardImages = [
         ecoFriendly: `High`,
         price: `Low`,
         catagory: `container`,
-        score: 70
+        score: 75
     },
     {
-        index: 15,
+        index: 13,
         img: `card-basket.png`,
         name: `Plastic Basket`,
         lifeSpan: `Medium`,
@@ -176,7 +154,7 @@ const cardImages = [
         score: 20
     },
     {
-        index: 16,
+        index: 14,
         img: `card-flashlight.png`,
         name: `Battery Flashlight`,
         lifeSpan: `Medium`,
@@ -187,7 +165,7 @@ const cardImages = [
         score: 50
     },
     {
-        index: 17,
+        index: 15,
         img: `card-tupperware.png`,
         name: `Plastic Tupperware`,
         lifeSpan: `High`,
@@ -198,18 +176,18 @@ const cardImages = [
         score: 40
     },
     {
-        index: 18,
+        index: 16,
         img: `card-butter.png`,
         name: `Butter`,
         lifeSpan: `Medium`,
         carbonEmissions: `Medium`,
         ecoFriendly: `Medium`,
         price: `Medium`,
-        catagory: `food-ingredient`,
+        catagory: `fat`,
         score: 60
     },
     {
-        index: 19,
+        index: 17,
         img: `card-solar-flashlight.png`,
         name: `Solar Powered Flashlight`,
         lifeSpan: `High`,
@@ -220,7 +198,7 @@ const cardImages = [
         score: 87
     },
     {
-        index: 20,
+        index: 18,
         img: `card-sugar.png`,
         name: `Sugar`,
         lifeSpan: `Medium`,
@@ -231,7 +209,7 @@ const cardImages = [
         score: 55
     },
     {
-        index: 21,
+        index: 19,
         img: `card-bulb.png`,
         name: `Incandescent Light Bulb`,
         lifeSpan: `Low`,
@@ -242,7 +220,7 @@ const cardImages = [
         score: 25
     },
     {
-        index: 22,
+        index: 20,
         img: `card-cake.png`,
         name: `Cake`,
         lifeSpan: `Low`,
@@ -253,7 +231,7 @@ const cardImages = [
         score: 55
     },
     {
-        index: 23,
+        index: 21,
         img: `card-pizza.png`,
         name: `Pizza`,
         lifeSpan: `Low`,
@@ -261,17 +239,17 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `Medium`,
         catagory: `food-junk`,
-        score: 55
+        score: 50
     },
     {
-        index: 24,
+        index: 22,
         img: `card-margerine.png`,
         name: `Margerine`,
         lifeSpan: `High`,
         carbonEmissions: `High`,
         ecoFriendly: `Medium`,
         price: `Low`,
-        catagory: `food-junk`,
+        catagory: `fat`,
         score: 40
     },
 ]

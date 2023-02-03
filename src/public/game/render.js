@@ -19,7 +19,7 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `High`,
         catagory: `food-junk`,
-        score: 10
+        score: 55
     },
     {
         index: 2,
@@ -52,7 +52,7 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `Medium`,
         catagory: `food-dessert`,
-        score: 15
+        score: 35
     },
     {
         index: 5,
@@ -140,7 +140,7 @@ const cardImages = [
         ecoFriendly: `High`,
         price: `Low`,
         catagory: `container`,
-        score: 70
+        score: 75
     },
     {
         index: 13,
@@ -239,7 +239,7 @@ const cardImages = [
         ecoFriendly: `Low`,
         price: `Medium`,
         catagory: `food-junk`,
-        score: 55
+        score: 50
     },
     {
         index: 22,

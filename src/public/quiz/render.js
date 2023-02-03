@@ -12,7 +12,7 @@ const Questions = [
     },
     {
         id: 1,
-        q: `which of the following are all examples of renewable energy sources?`,
+        q: `Which of the following are all examples of renewable energy sources?`,
         a: [
             { text: `Bioethanol, natural gas, petroleum`, isCorrect: false },
             { text: `Geothermal, wind, solar`, isCorrect: true },

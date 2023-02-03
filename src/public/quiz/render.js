@@ -41,7 +41,7 @@ const Questions = [
             { text: `China`, isCorrect: false },
             { text: `Austrailia`, isCorrect: false }
         ],
-        i: `The world’s largest wind farm is located in the United Kingdom.`
+        i: `The world's largest wind farm is located in the United Kingdom.`
     },
     {
         id: 4,
@@ -119,7 +119,7 @@ const leaveListener = () => {
 }
 
 const right = () => {
-    if (id <= 6) {
+    if (id <= Questions.length - 1) {
         for (let option of options) {
             option.style.color = `white`;
         }
@@ -147,7 +147,7 @@ const nextListener = () => {
 
 let id = 0
 const newQuestion = () => {
-    if (id <= 6) {
+    if (id <= Questions.length - 1) {
         selected = false
         for (const option of options) {
             option.classList.remove(`active`);
